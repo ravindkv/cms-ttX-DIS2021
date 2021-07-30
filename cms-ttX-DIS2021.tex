@@ -17,35 +17,15 @@
 % If you are submitting a paper to SciPost Physics Lecture Notes: uncomment next line
 %\documentclass[submission, LectureNotes]{SciPost}
 % If you are submitting a paper to SciPost Physics Proceedings: uncomment next line
-\documentclass[submission, Proceedings]{SciPost}
+%\documentclass[submission, Proceedings]{SciPost}
 
 %-------------------------------------------------
 % CERN-LHC-CMS specific styles
 %-------------------------------------------------
 \usepackage{lineno}
 \linenumbers
-
-\newcommand{\fbinv}{\ensuremath{{\text{fb}^{-1}}}{}}
-\newcommand{\GeV}{\ensuremath{{\text{GeV}}}}
-\newcommand{\TeV}{\ensuremath{{\text{TeV}}}}
-\newcommand{\ptmiss}{\ensuremath{{p_\text{T}^{\text{miss}}}}}
-\newcommand{\pt}{\ensuremath{{p_\text{T}}}}
-
-\newcommand{\Pe}{\ensuremath{{e}}}
-\newcommand{\PQt}{\ensuremath{{t}}}
-\newcommand{\PAQt}{\ensuremath{{\bar{t}}}}
-\newcommand{\PQb}{\ensuremath{{b}}}
-\newcommand{\PAQb}{\ensuremath{{\bar{b}}}}
-\newcommand{\PQc}{\ensuremath{{c}}}
-\newcommand{\PAQc}{\ensuremath{{\bar{c}}}}
-\newcommand{\ttbar}{{\PQt\PAQt}}
-\newcommand{\PGg}{\ensuremath{{\upgamma}}}
-\newcommand{\PZ}{\ensuremath{{Z}}}
-\newcommand{\PW}{\ensuremath{{W}}}
-\newcommand{\Pepm}{\ensuremath{{e^\pm}}}
-\newcommand{\PGmmp}{\ensuremath{{\mu^\pm}}}
-
-
+\newcommand{\xss}{\ensuremath{{\text{cross section}}}~}
+\newcommand{\mes}{\ensuremath{{\text{measurement}}}~}
 \newcommand{\PQtau}{\ensuremath{{\tau}}}
 \newcommand{\Pmu}{\ensuremath{{\mu}}}
 \newcommand{\pzvar}{\ensuremath{p_\text{Z}(\Pepm, \PGmmp, j)}}
@@ -75,14 +55,14 @@
     urlcolor={blue!80!black}
 }
 
-\usepackage[bitstream-charter]{mathdesign}
+%%\usepackage[bitstream-charter]{mathdesign}
 \urlstyle{sf}
 
 % Fix \cal and \mathcal characters look (so it's not the same as \mathscr)
-\DeclareSymbolFont{usualmathcal}{OMS}{cmsy}{m}{n}
-\DeclareSymbolFontAlphabet{\mathcal}{usualmathcal}
+%%\DeclareSymbolFont{usualmathcal}{OMS}{cmsy}{m}{n}
+%%\DeclareSymbolFontAlphabet{\mathcal}{usualmathcal}
 
-\begin{document}
+%%\begin{document}
 
 % TODO: write your article's title here.
 % The article title is centered, Large boldface, and should fit in two lines
@@ -137,9 +117,15 @@ Related Subjects,}\\
 
 \section*{Abstract}
 {\bf
-Measurements of the cross section for the production of the single top with a \PW boson, top quark pair
-with and without additional quarks are presented at the different center of mass energies with different
-integrated luminosity recorded by the CMS experiment during the years 2016-18 of data-taking. The 
+
+%%%%%%%%%
+XXXX \PQt XXXX
+%%%%%%%%%
+
+Measurements of the cross section for the production of the single top with a \PW boson, top quark 
+pairs with and without additional quarks are presented at the different center of mass energies 
+with different integrated luminosity recorded by the CMS experiment during the years 2016-18 of 
+data-taking. The 
 measurement is performed in semi and dileptonic decay modes of the top quark. A few of them 
 are performed for the first time. The measured and the predicted value of the inclusive cross 
 section are in agreement within the uncertainties. The differential and double differential
@@ -150,55 +136,56 @@ the event generator.
 \section{Introduction}
 \label{sec:intro}
 The top quark is one of the most interesting particles present in the Standard Model (SM) of
-particle physics as it is postulated to interact with unknown particles beyond the SM
-theories. Precise measurement of the properties of the top quark helps in the improvement of 
+particle physics as it is postulated to interact with unknown particles from theories beyond the 
+SM. Precise measurement of the properties of the top quark helps in the improvement of 
 search sensitivity and test of perturbative Quantum Chromodynamics. Differential cross section 
-measurement is used to test fixed-order predictions and extract QCD parameters. The \ttbar~ 
-production cross section is dominant at LHC and serves as the background for many new physics searches.
+measurements are used to test fixed-order predictions and extract QCD parameters. The \ttbar~ 
+production is dominant at LHC and serves as the background for many new physics searches.
 
-There have been many earlier measurements at 7, 8, and 13 TeV center of mass energy 
-as shown in Figure~\ref{fig:xss}. Among them, the \ttbar~ production dominates.
+There have been many earlier measurements at 7, 8, and 13 TeV center-of-mass energy 
+as shown in Figure~\ref{fig:xss}. 
 In this proceeding, we summarise the recent cross section measurement in the CMS experiment at the
 LHC. For a more detailed description of each of the measurements, the reader is encouraged to look
-at the corresponding paper. Here we summarise the \ttbar~ measrements in Section~\ref{sec:tt},
-\PQt\PW~ in Section~\ref{sec:tW}, and $\PQt\PQt$X in Section~\ref{sec:ttX} where X stands for $\gamma$, $c\bar{c}$, and $b\bar{b}$.
+at the corresponding paper. Here we summarise the \ttbar~ measurements in Section~\ref{sec:tt},
+\PQt\PW~ in Section~\ref{sec:tW}, and $\ttbar$X in Section~\ref{sec:ttX} where X stands for $\gamma$, $c\bar{c}$, and $b\bar{b}$.
 
 \begin{figure}[htb!]
 \centering
-\includegraphics[width=1.0\linewidth]{Figures/SigmaNew_v8.pdf}
+\includegraphics[width=1.0\linewidth]{SigmaNew_v8.pdf}
 \caption{Top quark prodution cross section at various center of mass energies measured in the
-    CMS experiment. The measurement is performed for the production of single \PQt, \ttbar~, \ttbar~ + jets, \PQt + X, \ttbar~+ X, \ttbar\ttbar, etc. Among these, a few of them are new at 13 TeV whereas a
-    few of them are still being studied. There is a good agreement between the predicted and
-    measured values within the uncertainties.}
+	CMS experiment. The measurement is performed for the production of single \PQt, \ttbar~, \ttbar~ + jets, \PQt + X, \ttbar~+ X, \ttbar\ttbar, etc. Among these, a few of them are new at 13 TeV whereas a
+	few of them are still being studied. There is a good agreement between the predicted and
+	measured values within the uncertainties.}
 \label{fig:xss}
 \end{figure}
 
 %================
 % tt
 %================
-\section{\ttbar~ production}
+\section{\ttbar~ production \xss}
 \label{sec:tt}
-Due to the higher cross section, the \ttbar~ production process is extensively studied at the LHC.
+Due to the higher cross section among all \PQt quark prodcution processes, the \ttbar~ production process is extensively studied at the LHC.
 Depending on the subsequent decays of the two \PQt~ quarks, the final states consist of either all
-jets, \ljets, or \dilep. All jet final states have more statistics but more multijet background whereas the \dilep~ have fewer statistics but small background. The \ljets final states fall in 
-between the two. However, the measurement of cross sections from all these final states is needed
-in order to study various physics beyond the SM. In this proceedings, we present the measurement 
-from the \ljets and \dilep~ final states for \ttbar~ production.
+jets, \ljets, or \dilep. All jet final states have larger size of the selected data set but more 
+multijet background whereas the \dilep~ have fewer statistics but small background. The \ljets 
+final states fall in between the two. However, the measurement of cross sections from all these 
+final states is needed in order to study various physics beyond the SM. In this proceedings, we 
+present the measurement from the \ljets and \dilep~ final states for \ttbar~ production.
 
 
-\subsection{Inclusive and differential in the \ljets final states}
-The measurement of the cross section is performed using 137 \fbinv integrated luminosity in the 
-\ejets~ and \mujets~ final states~\cite{CMS-PAS-TOP-20-001}. In order to increase the sensitivity, 
-the events are further divided into boosted and resolved categories based on the kinematics of the
-decay products of the \ttbar. The final cross section is extracted by a simultaneous fit combining 
-events from both final states and all categories. Various distributions such as the transverse 
-momentum of the \PQt~ quark, invariant mass of \ttbar, etc are used to measure the differential and 
-double differential cross-sections at parton and particle levels. A neural network is exploited in the 
-reconstruction of variables from boosted \PQt~ quark. A $\chi^2$ test is performed to compare the 
-measurements with several predictions. The dominant source of systematic uncertainty comes from 
-jet energy correction.
+\subsection{Inclusive and differential \mes in the \ljets final states}
+The measurement of the \ttbar cross section is performed using 137 \fbinv integrated luminosity in 
+the \ejets~ and \mujets~ final states~\cite{CMS-PAS-TOP-20-001}. In order to increase the 
+sensitivity, the events are further divided into boosted and resolved categories based on the 
+kinematics of the decay products of the \ttbar. The final cross section is extracted by a 
+simultaneous fit combining events from both final states and all categories. Various distributions 
+such as the transverse momentum of the \PQt~ quark, invariant mass of \ttbar, etc are used to 
+measure the differential and double differential cross-sections at parton and particle levels. A 
+neural network is exploited in the reconstruction of variables from boosted \PQt~ quarks. 
+A $\chi^2$ test is performed to compare the measurements with several predictions. The dominant 
+source of systematic uncertainty comes from jet energy correction.
 
-The meausred value of the inclusive cross section $791\pm 25$ pb 
+The measured value of the inclusive cross section $791\pm 25$ pb 
 is in agreement with the corresponding predicted value of $832\pm 46$ pb. One of the most 
 striking features of this measurment is that the measured cross section is more precise 
 (3.2\% uncertainty) as compared to the predicted value (5.5\% uncertainty). The measured and 
@@ -222,16 +209,16 @@ $60.3 \pm 5.0 \text{(stat)} \pm 2.8 \text{(syst)} \pm 0.9 \text{(lumi)}$ pb, res
 agree within the uncertainties. 
 
 \subsection{Inclusive in the \dilep~ final states including $\PQtau$}
-This is the first measurement involving $\tau$ lepton~\cite{CMS:2019snc} and provides another 
+This is the first measurement involving $\tau$ leptons~\cite{CMS:2019snc} and provides another 
 way of checking lepton flavor universality violation. With the third generation of lepton and quarks,
 it is sensitive to beyond SM contributions such as the reconstruction of charged Higgs boson. In 
-this analysis, one of the lepton from \dilep~ final states is required to be hadronically decaying 
-\PQtau~ and the other one is either an electron or muon. The masurement is performed at 13 TeV 
-using 35.9\fbinv integrated luminosity. The cross section is extracted using the profile 
-likelihood method based on the transverse mass of the lepton and missing transverse energy.The  
+this analysis, one of the leptons from \dilep~ final states is required to be a hadronically 
+decaying \PQtau~ and the other one is either an electron or muon. The measurement is performed at 
+13 TeV using 35.9\fbinv integrated luminosity. The cross section is extracted using the profile 
+likelihood method based on the transverse mass of the lepton and missing transverse energy. The  
 QCD multijet background is estimated from the data. The main sources of systematic uncertainty are 
-from $\tau_h$ identification and misidentification. The measured cross section combining both channels 
-is  
+from $\tau_h$ identification and misidentification. The measured cross section combining both 
+channels is  
 $\sigma_\ttbar(\ell\tau_h) = 781 \pm 7 \text{(stat)} \pm 62 \text{(syst)} \pm 20 \text{(lumi)}$ pb
 which is in agreement with the corresponding predicted value. The ratio of this with the same 
 flavor cross section 
@@ -273,16 +260,16 @@ agreement within the uncertainties across different bins of all variables.
 %================
 \section{\ttgamma, \ttcc, \ttbb~productions}
 \label{sec:ttX}
-Although the cross section of these processes are smaller as shown in Figure~\ref{fig:xss},
-they are useful in studying rare phenomenon with in the SM and new physics beyond it, for example,
+Although the cross sections of these processes are smaller as shown in Figure~\ref{fig:xss},
+they are useful in studying rare phenomena with in the SM and new physics beyond it, for example,
 The \ttgamma~ measurement allows in constraining the $\PQt\gamma$ electroweak coupling and \ttcc~ or
 \ttbb~ provide a useful test of NLO QCD calculations. 
 
 \subsection{Inclusive and differential \ttgamma~ in $\ell$ + jets final states}
 This is the first \ttgamma~ cross section measurement at 13 TeV in the CMS experiment using 137\fbinv~
 integrated luminosity~\cite{CMS-PAS-TOP-18-010}. The measurement is performed in the \ejets~ and 
-\mujets~ final states with one photon. Photon is classified based on matched generator parton in 
-the genuine, nonprompt, misidentified, and multijet photon cateforied. Different phase space based 
+\mujets~ final states with one photon. Photons are classified based on matched generator parton in 
+the genuine, nonprompt, misidentified, and multijet photon cateforied. Different phase spaces based 
 on object selections and kinematic cuts are exploited to improve the precision. QCD multijet and 
 electroweak backgrounds are measured from data. A simultaneous fit combining all event categories is 
 performed to extract the cross section. The dominant uncertainties in the cross section come from 
@@ -295,12 +282,12 @@ in the bins where statistical precision is low.
 
 \subsection{Inclusive \ttcc~ cross section in $2\ell$ + jets final states}
 Due to the availability of \PQc-jet taggers at 13 TeV, there has been an improvement in the 
-sensitivity in the measurement involving \PQc~ jet in the final state. For the first time \ttcc~ 
-cross section measurement is performed in the CMS~\cite{CMS:2020qvt}. The analysis is performed in 
-the \dilep~ final states with the same flavor lepton (\Pe, \Pmu, or \PQtau) with 41.5\fbinv~ integrated 
-luminosity at the center-of-mass energy of 13 TeV. A neural network is trained to distinguish 
-between top quark pair events with additional jets. Event level neural network predicts output 
-probabilities for five output classes $P$($\ttcc$), $P$($\ttcL$), $P$($\ttbb$), $P$($\ttbL$), and $P$($\ttLF$). Two variables are derived based on these
+sensitivity in the measurement involving \PQc~ jet in the final state. For the first time a \ttcc~ 
+cross section measurement is performed  by the CMS Collaboration~\cite{CMS:2020qvt}. The analysis 
+is performed in the \dilep~ final states with the same flavor lepton (\Pe, \Pmu, or \PQtau) 
+with 41.5\fbinv~ integrated luminosity at the center-of-mass energy of 13 TeV. A neural network is 
+trained to distinguish between top quark pair events with additional jets. Event level neural 
+network predicts output probabilities for five output classes $P$($\ttcc$), $P$($\ttcL$), $P$($\ttbb$), $P$($\ttbL$), and $P$($\ttLF$). Two variables are derived based on these
 \begin{linenomath}
 \begin{equation}
   \begin{aligned}
@@ -314,7 +301,7 @@ A 1-d histogram is constructed from the 16 bins of the 2-d plane of these two va
 \begin{equation}
 \Delta_{\text{L}}^{\PQc} \otimes \Delta_{\PQb}^{\PQc} :  [0,0.55,0.65,0.85,1.0] \otimes [0,0.35,0.5,0.6,1.0].
 \end{equation}
-The \ttcc, \ttbb, \ttLF~cross sections are simultaneously extracted by fitting the neural newtwork
+The \ttcc, \ttbb, \ttLF~cross sections are simultaneously extracted by fitting the neural network
 outputs from simulation and observation. The dominant source of systematic uncertainty comes 
 from the jet energy correction and c-tagging calibration. The $\ttcc$ cross section in the
 full phase space is measured to be $7.43\pm 1.07(\text{stat})\pm 0.95(\text{syst})$ pb. 
@@ -332,7 +319,6 @@ section for \ttbb~ is $0.040 \pm 0.002 (\text{stat}) \pm 0.005 (\text{syst})$ pb
 $0.62 \pm 0.03 (\text{stat}) \pm 0.07 (\text{syst})$ pb for \ljets and \dilep~ final states, 
 respectively. These are consistent within the uncertainties, with the SM prediction obtained using 
 a matrix element calculation at NLO order in QCD matched to a parton shower.
- 
 
 \section{Conclusion}
 In this proceedings, a summary of the inclusive, differential, and double differential cross section
@@ -364,11 +350,4 @@ LNS, SEP, and UASLP-FAI (Mexico); MOS (Montenegro); MBIE (New Zealand); PAEC (Pa
 CPAN, PCTI, and FEDER (Spain); MOSTR (Sri Lanka); Swiss Funding Agencies (Switzerland); MST (Taipei);
 ThEPCenter, IPST, STAR, and NSTDA (Thailand); TUBITAK and TAEK (Turkey); NASU and SFFR (Ukraine); STFC (United
 Kingdom); DOE and NSF (USA).
-
-%\begin{verbatim}
-\bibliographystyle{unsrt}
-\bibliography{cms-ttX-DIS2021-SciPost.bib}
-%\end{verbatim}
-
-\nolinenumbers
-\end{document}
+\bibliography{auto_generated}
